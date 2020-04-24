@@ -1,21 +1,50 @@
-﻿.vertical-menu {
-    width: 110px;
+﻿.navbar {
+    navbar-expand-lg; 
+    navbar-light ;
+    bg-dark;
 }
-.vertical-menu a {
-        background-color: darkgray;
-        color: white;
-        display: block;
-        padding: 12px;
-        text-decoration: none;
-    }
-.vertical-menu a:hover {
-    background-color: lightblue; 
-}
-.vertical-menu a.active {
-    background-color: cadetblue; 
-    color: white;
-}
-
 .container {
     width: 100%;
+}
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+@media (max-width: 400px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
+}
+@media (max-width: 350px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+}
+table {
+    width: 50%;
+}
+table#garishtable {
+    width: 90%;
+    background-color: mediumvioletred;
+    font-family: 'Comic Sans MS';
+    font-size: 30px;
+    color: blue;
+    text-align: right;
+}
+table, th, td {
+    border: 1px solid black;
+    margin: 20px;
+}
+th, td {
+    padding: 20px;
 }
